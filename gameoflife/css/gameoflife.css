@@ -1,0 +1,216 @@
+.fila{
+	overflow: hidden;
+	width: 1850px;
+}
+
+.celda{
+	border: 1px solid grey;
+	float: left;
+	padding: 5px;
+	background: rgba(255,255,255,0.5);
+}
+
+.clear{
+	clear: both;
+}
+
+.celula{
+	width: 15px;
+	height: 15px;
+	border: 5px solid black;
+	border-radius: 15px;
+}
+
+.live{
+	border-color: #00B515;
+	background: #3EFF55;
+	-moz-animation-name: muerte;
+	-moz-animation-duration: 2s;
+	-moz-animation-iteration-count: 1;
+	-webkit-animation-name: muerte;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: 1;
+	-o-animation-name: muerte;
+	-o-animation-duration: 2s;
+	-o-animation-iteration-count: 1;
+}
+
+.die{
+	border-color: #A9A9A9;
+	background: #DCDCDC;
+	-moz-animation-name: resurreccion;
+	-moz-animation-duration: 2s;
+	-moz-animation-iteration-count: 1;
+	-webkit-animation-name: resurreccion;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: 1;
+	-o-animation-name: resurreccion;
+	-o-animation-duration: 2s;
+	-o-animation-iteration-count: 1;
+}
+
+@-moz-keyframes muerte{
+   from{
+		border-color: #A9A9A9;
+		background: #DCDCDC;
+   }
+   to {
+		border-color: #00B515;
+		background: #3EFF55;
+   }
+}
+
+@-moz-keyframes resurreccion {
+   from{
+		border-color: #00B515;
+		background: #3EFF55;
+   }
+   to{
+		border-color: #A9A9A9;
+		background: #DCDCDC;
+   }
+}
+
+@-webkit-keyframes muerte{
+   from{
+		border-color: #A9A9A9;
+		background: #DCDCDC;
+   }
+   to {
+		border-color: #00B515;
+		background: #3EFF55;
+   }
+}
+
+@-webkit-keyframes resurreccion{
+   from{
+		border-color: #00B515;
+		background: #3EFF55;
+   }
+   to{
+		border-color: #A9A9A9;
+		background: #DCDCDC;
+   }
+}
+
+@-o-keyframes muerte{
+   from{
+		border-color: #A9A9A9;
+		background: #DCDCDC;
+   }
+   to {
+		border-color: #00B515;
+		background: #3EFF55;
+   }
+}
+
+@-o-keyframes resurreccion{
+   from{
+		border-color: #00B515;
+		background: #3EFF55;
+   }
+   to{
+		border-color: #A9A9A9;
+		background: #DCDCDC;
+   }
+}
+
+label
+{
+	font-weight: bold;
+	display: block;
+	float: left;
+	width: 20%;
+	font-size: 1.2em;
+	padding: 10px 0;
+	font-family: verdana;
+}
+
+span#generacion, span#celulas{
+	font-size: 1.4em;
+	padding: 10px 0;
+	color: #393939;
+	font-weight: bold;
+	float: left;
+	padding: 10px;
+	font-family: verdana;
+
+}
+
+input{
+	background: silver;
+	border: 1px solid #393939;
+	border-radius: 5px 5px 5px 5px;
+	color: #393939;
+	font-size: 12px;
+	padding: 5px;
+	font-family: verdana;
+	margin: 10px 0;
+}
+input:focus {
+	outline: none;
+	border: solid 1px #707070;
+	box-shadow: 0 0 5px 1px #969696;
+}
+
+fieldset
+{
+	border-radius: 20px;
+	border: 3px solid #DCDCDC;
+	background: rgba(255,255,255,0.5);
+}
+
+button{
+    display:block;
+    float:left;
+    margin: 5px 0;
+    background-color:#f5f5f5;
+    border:1px solid #dedede;
+    border-top:1px solid #eee;
+    border-left:1px solid #eee;
+    font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+    font-size:12px;
+    line-height:130%;
+    text-decoration:none;
+    font-weight:bold;
+    color:#565656;
+    cursor:pointer;
+    padding:5px 10px 6px 7px; /* Links */
+}
+button{
+    width:auto;
+    overflow:visible;
+    padding:4px 10px 3px 7px; /* IE6 */
+}
+button[type]{
+    padding:5px 10px 5px 7px; /* Firefox */
+    line-height:17px; /* Safari */
+}
+/* STANDARD */
+
+button:hover{
+    background-color:#dff4ff;
+    border:1px solid #c2e1ef;
+    color:#336699;
+}
+
+h1,h3 {
+	text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	color: #FFF;
+}
+
+h1{font-size: 4em;}
+h3{font-size: 2em;}
+html{background: #3594c0;}
